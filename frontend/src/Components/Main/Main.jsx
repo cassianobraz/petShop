@@ -19,84 +19,114 @@ export function Main() {
   }
 
   return (
-    <main>
-      <section id="inicio">
-        <img src={imgStart} alt="img de inicio" width="580" height="580" />
+    <main className="px-4 sm:px-6 lg:px-8">
+      <section
+        id="inicio"
+        className="flex flex-col items-center justify-center gap-8 lg:flex-row"
+      >
+        <img
+          src={imgStart}
+          alt="img de inicio"
+          className="h-auto max-w-full rounded-lg"
+        />
 
         <div>
-          <h1>
+          <h1 className="text-center text-xl font-bold sm:text-2xl lg:text-left lg:text-3xl">
             Garanta uma vida longa e cheia de alegria para o seu melhor amigo
           </h1>
-          <p className="paragrafo">
+          <p className="paragrafo mt-4 text-justify text-base sm:text-lg">
             A PetLife é o seu refugio de confiança para o cuidado completo do
             sue pet. Com profissionais dedicados e serviços abrangentes,
             oferecemos uma experiência acolhedora e personalizada, garantindo o
-            bem-estar, a saúde e a felicidade dos seus animais de estimação
+            bem-estar, a saúde e a felicidade dos seus animais de estimação.
           </p>
-          <a className="botao" href="https://wa.me/69992991613" target="_blank">
-            Marque uma consulta
-          </a>
-          <a className="botao-transparente" href="#clinica">
-            Conheça nossa Clínica
-          </a>
+          <div className="mt-4 flex flex-col gap-4 sm:flex-row">
+            <a
+              className="botao w-full sm:w-auto"
+              href="https://wa.me/69992991613"
+              target="_blank"
+            >
+              Marque uma consulta
+            </a>
+            <a className="botao-transparente w-full sm:w-auto" href="#clinica">
+              Conheça nossa Clínica
+            </a>
+          </div>
+          <img className="absolute" src={imgShape} alt="" />
         </div>
-        <img className="absolute" src={imgShape} alt="" />
       </section>
 
-      <section id="clinica">
-        <div>
-          <h2>Cuidado Veterinário de Qualidade</h2>
-          <p className="paragrafo">
-            Nossa clínica veterinária é o local onde a paixão pelos animais se
-            une à excelência em cuidados veterinários. Sob a liderança da Dra.
-            Vivian Reid, uma profissional altamente qualificada e comprometida,
-            oferecemos serviços de saúde e bem-estar para animais de estimação
-            de todas as espécies. Venha conhecer nossa clínica e desfrute da
-            atenção personalizada e do carinho que seu pet merece.
-          </p>
-          <ul>
-            <li>Consultas de rotina e exames de saúde abrangentes</li>
-            <li>Vacinação e imunização</li>
-            <li>Cirurgias e procedimentos veterinários</li>
-            <li>Tratamento e controle de doenças</li>
-            <li>Odontologia veterinária</li>
-            <li>Atendimento de emergência 24 horas</li>
-            <li>Nutrição e aconselhamento alimentar personalizado</li>
-          </ul>
-        </div>
+      <section id="clinica" className="p-4 lg:p-8">
+        <div className="mx-auto grid max-w-4xl grid-cols-1 items-center gap-6 lg:grid-cols-2">
+          <div>
+            <h2 className="text-center text-2xl font-bold lg:text-left lg:text-3xl">
+              Cuidado Veterinário de Qualidade
+            </h2>
+            <p className="mt-4 text-justify text-base lg:text-lg">
+              Nossa clínica veterinária é o local onde a paixão pelos animais se
+              une à excelência em cuidados veterinários. Sob a liderança da Dra.
+              Vivian Reid, uma profissional altamente qualificada e
+              comprometida, oferecemos serviços de saúde e bem-estar para
+              animais de estimação de todas as espécies. Venha conhecer nossa
+              clínica e desfrute da atenção personalizada e do carinho que seu
+              pet merece.
+            </p>
+            <ul className="mt-4 list-disc pl-5 text-sm lg:text-base">
+              <li>Consultas de rotina e exames de saúde abrangentes</li>
+              <li>Vacinação e imunização</li>
+              <li>Cirurgias e procedimentos veterinários</li>
+              <li>Tratamento e controle de doenças</li>
+              <li>Odontologia veterinária</li>
+              <li>Atendimento de emergência 24 horas</li>
+              <li>Nutrição e aconselhamento alimentar personalizado</li>
+            </ul>
+          </div>
 
-        <img src={imgClinic} alt="" width="480" height="480" loading="lazy" />
+          <img
+            src={imgClinic}
+            alt=""
+            className="mx-auto mt-4 h-auto max-w-full rounded-lg lg:mt-0"
+          />
+        </div>
       </section>
 
-      <section id="farmacia">
-        <h2>Venha conferir o nosso petshop e farmácia</h2>
-        <img src={imgShop} alt="" width="645" height="430" loading="lazy" />
-        <p className="paragrafo">
-          Além de ser uma clínica veterinária de confiança, também contamos com
-          um completo petshop e farmácia. Nosso petshop oferece uma ampla
-          seleção de produtos de alta qualidade, desde alimentos balanceados e
-          petiscos deliciosos até brinquedos divertidos e acessórios elegantes
-          para o seu pet. Na nossa farmácia, você encontrará uma variedade de
-          medicamentos, produtos de cuidados e suplementos recomendados pelos
-          nossos veterinários, garantindo que o bem-estar e a saúde do seu amado
-          pet estejam sempre em boas mãos. Tudo o que você precisa para cuidar e
-          mimar o seu pet está aqui, no nosso petshop e farmácia, com a mesma
-          dedicação e qualidade que nos tornou referência na área veterinária.
-        </p>
+      <section id="farmacia" className="p-4 md:p-8">
+        <div className="mx-auto max-w-4xl">
+          <h2 className="text-center text-2xl font-bold md:text-3xl">
+            Venha conferir o nosso petshop e farmácia
+          </h2>
+          <img
+            src={imgShop}
+            alt=""
+            className="mx-auto mt-4 h-auto max-w-full rounded-lg"
+          />
+          <p className="paragrafo mt-4 text-justify text-base md:text-lg">
+            Além de ser uma clínica veterinária de confiança, também contamos
+            com um completo petshop e farmácia. Nosso petshop oferece uma ampla
+            seleção de produtos de alta qualidade, desde alimentos balanceados e
+            petiscos deliciosos até brinquedos divertidos e acessórios elegantes
+            para o seu pet. Na nossa farmácia, você encontrará uma variedade de
+            medicamentos, produtos de cuidados e suplementos recomendados pelos
+            nossos veterinários, garantindo que o bem-estar e a saúde do seu
+            amado pet estejam sempre em boas mãos. Tudo o que você precisa para
+            cuidar e mimar o seu pet está aqui, no nosso petshop e farmácia, com
+            a mesma dedicação e qualidade que nos tornou referência na área
+            veterinária.
+          </p>
+        </div>
       </section>
 
       <section
         id="duvidas"
-        className="flex min-h-screen flex-col items-center justify-center gap-8 p-4 lg:flex-row"
+        className="flex flex-col items-center justify-center gap-8 p-4 md:flex-row md:p-8"
       >
         <img
           src={imgFaq}
           alt="FAQ"
-          className="h-auto max-w-full lg:w-1/3"
-          loading="lazy"
+          className="h-auto max-w-full rounded-lg md:w-1/3"
         />
-        <div className="w-full lg:w-2/3">
-          <h2 className="mb-6 text-center text-2xl font-bold">
+        <div className="w-full md:w-2/3">
+          <h2 className="mb-6 text-center text-2xl font-bold md:text-3xl">
             Ficou alguma dúvida?
           </h2>
           {[0, 1, 2, 3].map((index) => (
@@ -106,7 +136,7 @@ export function Main() {
               onClick={() => toggleDuvida(index)}
             >
               <div className="flex items-center justify-between">
-                <h3 className="text-lg font-semibold">
+                <h3 className="text-lg font-semibold md:text-xl">
                   {index === 0
                     ? 'Quais serviços são oferecidos pela clínica da PetLife'
                     : index === 1
@@ -122,7 +152,7 @@ export function Main() {
                 )}
               </div>
               {duvidaAtiva === index && (
-                <p className="paragrafo mt-2">
+                <p className="paragrafo mt-2 text-justify">
                   {index === 0
                     ? 'A clínica da PetLife oferece uma ampla gama de serviços, incluindo consultas de rotina, vacinação, cirurgias, tratamento de doenças, cuidados odontológicos, atendimento de emergência 24 horas, programas de prevenção de pulgas, carrapatos e vermes, entre outros. Nosso objetivo é fornecer cuidados abrangentes e personalizados para garantir a saúde e o bem-estar do seu pet.'
                     : index === 1

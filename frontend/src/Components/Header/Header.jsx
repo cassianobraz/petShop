@@ -8,7 +8,11 @@ export function Header() {
   return (
     <header className="fixed top-0 z-50 h-16 w-full">
       <a href="index.html">
-        <img src={logoWhite} alt="logo do site" className="h-8 w-auto" />
+        <img
+          src={logoWhite}
+          alt="logo do site"
+          className="h-8 w-auto md:-mt-2"
+        />
       </a>
       <div className="md:hidden">
         <button
@@ -24,9 +28,9 @@ export function Header() {
         </button>
       </div>
       <nav
-        className={`${menuOpen ? 'flex' : 'hidden'} absolute left-0 top-full w-full flex-col py-3 shadow-md md:static md:flex md:flex-row md:space-x-4 md:py-0 md:shadow-none`}
+        className={`${menuOpen ? 'bg-customOrange flex py-4 pt-2 md:py-0 md:pt-0' : 'hidden'} absolute left-0 top-full w-full flex-col shadow-md md:static md:mt-2 md:flex md:flex-row md:space-x-4 md:py-8 md:shadow-none`}
       >
-        <div className="mx-auto flex items-center  justify-between">
+        <div className="mx-auto -mt-4 flex items-center  justify-between">
           <a
             href="#inicio"
             className="rounded-lg px-5 py-2 text-gray-700 hover:bg-white hover:text-gray-900 md:mx-2"
