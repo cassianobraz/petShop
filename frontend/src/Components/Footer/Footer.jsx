@@ -40,7 +40,7 @@ export function Footer() {
             <p className="mb-1">
               WhatsApp:
               <a
-                href="https://wa.me/0000000000000"
+                href="https://wa.me/69992991613"
                 target="_blank"
                 className="hover:underline"
               >
@@ -49,8 +49,8 @@ export function Footer() {
             </p>
             <p className="mb-1">
               Email:{' '}
-              <a href="mailto:contato@petlife.com" className="hover:underline">
-                contato@petlife.com
+              <a href="mailto:cassanopb@gmail.com" className="hover:underline">
+                cassianodev@gmail.com
               </a>
             </p>
             <p className="mb-1">Endereço: Av. 7 de setembro, nº 00, Centro</p>
