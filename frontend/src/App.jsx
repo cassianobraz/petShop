@@ -1,7 +1,13 @@
+import { Footer } from './Components/Footer/Footer'
+import { Header } from './Components/Header/Header'
+import { Main } from './Components/Main/Main'
+
 export function App() {
   return (
     <>
-      <h1 className="mt-4 flex text-3xl font-bold underline">Hello world</h1>
+      <Header />
+      <Main />
+      <Footer />
     </>
   )
 }
