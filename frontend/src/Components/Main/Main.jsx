@@ -19,41 +19,49 @@ export function Main() {
   }
 
   return (
-    <main className="px-4 sm:px-6 lg:px-8">
+    <main className="w-full px-4 sm:px-6 lg:px-8">
       <section
         id="inicio"
-        className="flex flex-col items-center justify-center gap-8 lg:flex-row"
+        className="mt-8 flex w-full flex-col items-center justify-center sm:p-6 md:gap-10 md:p-8 lg:flex-row"
       >
         <img
           src={imgStart}
-          alt="img de inicio"
-          className="h-auto max-w-full rounded-lg"
+          alt="Imagem de início"
+          className="h-auto w-full rounded-lg sm:max-w-md lg:max-w-lg"
         />
 
-        <div>
+        <div className="flex w-full flex-col items-center lg:items-start">
           <h1 className="text-center text-xl font-bold sm:text-2xl lg:text-left lg:text-3xl">
             Garanta uma vida longa e cheia de alegria para o seu melhor amigo
           </h1>
-          <p className="paragrafo mt-4 text-justify text-base sm:text-lg">
-            A PetLife é o seu refugio de confiança para o cuidado completo do
-            sue pet. Com profissionais dedicados e serviços abrangentes,
+          <p className="mt-4 text-justify text-base sm:text-lg lg:text-left">
+            A PetLife é o seu refúgio de confiança para o cuidado completo do
+            seu pet. Com profissionais dedicados e serviços abrangentes,
             oferecemos uma experiência acolhedora e personalizada, garantindo o
             bem-estar, a saúde e a felicidade dos seus animais de estimação.
           </p>
-          <div className="mt-4 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-4 flex flex-col gap-4 sm:flex-row sm:gap-6">
             <a
-              className="botao w-full sm:w-auto"
+              className="botao mt-4 w-full rounded-lg hover:bg-orange-900 hover:text-white sm:w-auto"
               href="https://wa.me/69992991613"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Marque uma consulta
             </a>
-            <a className="botao-transparente w-full sm:w-auto" href="#clinica">
+            <a
+              className="botao-transparente mt-4 w-full rounded-lg border border-blue-500 hover:bg-orange-900 hover:text-white sm:w-auto"
+              href="#clinica"
+            >
               Conheça nossa Clínica
             </a>
           </div>
-          <img className="absolute" src={imgShape} alt="" />
         </div>
+        <img
+          src={imgShape}
+          alt="Decorative shape"
+          className="absolute bottom-0 right-0 hidden opacity-50 lg:block"
+        />
       </section>
 
       <section id="clinica" className="p-4 lg:p-8">

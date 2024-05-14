@@ -18,13 +18,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 80px;
+  padding: 25px 40px;
 }
 
 header nav a {
   color: #ffffff;
   font-weight: 600;
-  padding: 32px;
   text-decoration: none;
 }
 
@@ -32,7 +31,7 @@ header nav a {
   display: flex;
   align-items: center;
   gap: 32px;
-  padding: 24px 80px 128px;
+  padding: 70px 10px;
   position: relative;
 }
 
@@ -50,16 +49,16 @@ h2 {
 
 .botao {
   background-color: #ff725e;
-  padding: 16px 32px;
+  padding: 30px 10px;
   border-radius: 8px;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
 }
 
 .botao-transparente {
   background-color: transparent;
-  color: #ff725e;
-  padding: 16px 32px;
+  color: black;
+  padding: 30px 10px;
   text-underline-offset: 4px;
 }
 
@@ -75,7 +74,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 64px;
-  padding: 64px 80px;
+  padding: 80px 10px;
 }
 
 #clinica li {
@@ -84,7 +83,7 @@ h2 {
 }
 
 #farmacia {
-  padding: 64px 80px;
+  padding: 80px 10px;
   text-align: center;
 }
 
@@ -101,7 +100,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 64px;
-  padding: 64px 80px;
+  padding: 80px 10px;
 }
 
 .duvida {
@@ -145,7 +144,7 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 80px;
-  padding: 64px 80px;
+  padding: 40px 10px;
 }
 
 footer img,
@@ -174,7 +173,7 @@ footer p a {
 
 #copyright {
   background-color: #263138;
-  padding: 24px;
+  padding: 28px;
   text-align: center;
   color: #ffffff;
 }
